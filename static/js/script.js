@@ -1,3 +1,4 @@
+// Console.log para prueba de conxión js...
 console.log("Prueba de conexión js...")
 let contador = 0;
 let boton1 = document.querySelector("#boton1")
@@ -6,6 +7,7 @@ let boton3 = document.querySelector("#boton3")
 let libro = document.querySelector(".contador")
 
 // Ingreso de la seccion:
+
 const barraDeTexto = document.querySelector("#email")
 const botonLogin = document.querySelector(".login")
 
@@ -13,7 +15,7 @@ const botonLogin = document.querySelector(".login")
 
 boton1.addEventListener("click", function () {
     if(boton1 !== null) {
-        contador = contador + 1
+        contador = contador + 1 /* Contador +1 para los libros seleccionados */
         libro.textContent = contador
     } else {
         console.log("No existe el botón.")
@@ -52,6 +54,8 @@ if (botonLogin !== null && barraDeTexto !== null) {
 } else {
     console.log("el botón o la barra de texto no existe.")
 }
+
+// Sistema de cambio de imágen: 
 
 let imagen = document.querySelector("#imagenCambiante")
 imagen.addEventListener("mouseover", function () {
