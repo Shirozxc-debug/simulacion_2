@@ -40,22 +40,24 @@ boton3.addEventListener("click", function () {
 
 // Sistema Login:
 
-botonLogin.addEventListener("click", function () {
-    if (botonLogin !== null) {
-        if (barraDeTexto !== null) {
-            const correo = barraDeTexto.value
-            alert(`por favor ingrese un valor válido`)
+if (botonLogin !== null && barraDeTexto !== null) {
+    botonLogin.addEventListener("click", function () {
+        let correo = barraDeTexto.value
+        if (correo !== ""){
+            alert(`Bienvenido ${correo}`)
+        } else {
+            alert(`por favor ingrese un valor válido.`)
         }
-    } else {
-        console.log("EL botón no existe.")
-    }
-})
+    })
+} else {
+    console.log("el botón o la barra de texto no existe.")
+}
 
 let imagen = document.querySelector("#imagenCambiante")
 imagen.addEventListener("mouseover", function () {
-    this.src = "static/assets/img/biblioteca.png"
+    this.src = "static/images/biblioteca.png"
 })
 
 imagen.addEventListener("mouseout", function () {
-    this.src = "static/assets/img/biblioteca1-copia.png"
+    this.src = "static/images/biblioteca3.png"
 })
