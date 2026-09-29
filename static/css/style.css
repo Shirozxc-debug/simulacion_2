@@ -89,18 +89,20 @@ body {
     width: 150px;
     display: flex;
 }
-
-.container-izquierdo {
-    display: flex;
-    align-items: center;
-}
-
+/* Sección derecha del video */
 .container-derecho {
     display: flex;
     flex-direction: column;
     padding: 15px;
 }
 
+/* Sección izquierdo de los libros */
+.container-izquierdo {
+    display: flex;
+    align-items: center;
+}
+
+/* Contenedor main */
 .container {
     padding: 20px;
 }

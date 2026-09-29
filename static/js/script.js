@@ -1,15 +1,17 @@
 // Console.log para prueba de conxión js...
 console.log("Prueba de conexión js...")
+
+// Sección del contador para cada botón
 let contador = 0;
-let boton1 = document.querySelector("#boton1")
+let boton1 = document.querySelector("#boton1") /* Esto es para seleccionar el botón */
 let boton2 = document.querySelector("#boton2")
 let boton3 = document.querySelector("#boton3")
 let libro = document.querySelector(".contador")
 
 // Ingreso de la seccion:
 
-const barraDeTexto = document.querySelector("#email")
-const botonLogin = document.querySelector(".login")
+const barraDeTexto = document.querySelector("#email") /* Selección del email */
+const botonLogin = document.querySelector(".login") /* Seleción del botón Ingresar/Login */
 
 // Contador de libros seleccionados:
 
@@ -40,15 +42,15 @@ boton3.addEventListener("click", function () {
     }
 });
 
-// Sistema Login:
+// Sistema para el correo Login
 
 if (botonLogin !== null && barraDeTexto !== null) {
     botonLogin.addEventListener("click", function () {
         let correo = barraDeTexto.value
         if (correo !== ""){
-            alert(`Bienvenido ${correo}`)
+            alert(`Bienvenido ${correo}`) /* Alerta que te da cuando escribes el correo */
         } else {
-            alert(`por favor ingrese un valor válido.`)
+            alert(`por favor ingrese un valor válido.`) /* Esto es cuando no ingresas algun texto o numero */
         }
     })
 } else {
@@ -58,10 +60,10 @@ if (botonLogin !== null && barraDeTexto !== null) {
 // Sistema de cambio de imágen: 
 
 let imagen = document.querySelector("#imagenCambiante")
-imagen.addEventListener("mouseover", function () {
-    this.src = "static/images/biblioteca.png"
+imagen.addEventListener("mouseover", function () { /* Se agrega la primera imagen */
+    this.src = "static/images/biblioteca.png" /* Escribir el nombre de la imagen segun como es con static/images */
 })
 
-imagen.addEventListener("mouseout", function () {
+imagen.addEventListener("mouseout", function () { /* Este es para el cambio de la imagen */
     this.src = "static/images/biblioteca3.png"
 })
